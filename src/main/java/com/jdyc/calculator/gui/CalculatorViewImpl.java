@@ -23,7 +23,9 @@ import java.awt.GridLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
+import com.jdyc.calculator.controller.CalculatorController;
 import com.jdyc.calculator.main.Constants;
 import com.jdyc.calculator.model.CalculatorModel;
 import com.jdyc.calculator.model.operator.OperatorAdd;
@@ -35,7 +37,6 @@ import com.jdyc.calculator.model.operator.OperatorMul;
 import com.jdyc.calculator.model.operator.OperatorSign;
 import com.jdyc.calculator.model.operator.OperatorSqrt;
 import com.jdyc.calculator.model.operator.OperatorSub;
-import com.jdyc.calculator.controller.CalculatorController;
 
 @SuppressWarnings("serial")
 public class CalculatorViewImpl extends JFrame implements CalculatorView {
@@ -79,6 +80,7 @@ public class CalculatorViewImpl extends JFrame implements CalculatorView {
 		display.setPreferredSize(new Dimension(320, 50));
 		display.setEditable(false);
 		display.setFont(new Font("Arial", 3, 29));
+		display.setHorizontalAlignment(SwingConstants.RIGHT);
 		display.setOpaque(true);
 		displayPanel.add(display);
 
