@@ -27,7 +27,6 @@ public class Main {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
 				CalculatorController.getInstance().init();
-				System.gc();
 			}
 		});
 	}
