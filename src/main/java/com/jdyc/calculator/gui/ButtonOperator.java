@@ -28,7 +28,6 @@ public class ButtonOperator extends JRoundButton {
 
 		super(op.label);
 		addActionListener(new ActionListener() {
-			@Override
 			public void actionPerformed(ActionEvent event) {
 				ctr.processOperator(op);
 			}

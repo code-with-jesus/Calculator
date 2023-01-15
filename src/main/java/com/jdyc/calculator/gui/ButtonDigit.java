@@ -26,7 +26,6 @@ public class ButtonDigit extends JRoundButton {
 
 		super(str);
 		addActionListener(new ActionListener() {
-			@Override
 			public void actionPerformed(ActionEvent event) {
 				ctr.processDigit(str);
 			}
